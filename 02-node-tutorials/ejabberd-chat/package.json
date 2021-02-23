@@ -1,0 +1,23 @@
+{
+    "name": "ejabberd-chat",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon server2.js "
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@xmpp/client": "^0.6.2*",
+        "@xmpp/component": "^0.11.0",
+        "@xmpp/debug": "^0.11.0",
+        "bufferutil": "^4.0.1",
+        "ejs": "^3.0.1",
+        "express": "^4.17.1",
+        "node-xmpp": "^1.1.0",
+        "nodemon": "^2.0.2",
+        "socket.io": "^2.3.0",
+        "utf-8-validate": "^5.0.2"
+    }
+}

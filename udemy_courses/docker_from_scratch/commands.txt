@@ -1,0 +1,39 @@
+docker run --rm ( remove container logo apos ele finalizar)
+docker container prune - remove todos os containers inativos
+docker rmi <NOME>:<version> - remove imagem
+docker image prune -a  -  remove todas as imagens.
+docker rm <nome container> - remove container inativo
+
+docker inspect <nome container>
+docker inspect --format='{{}}' <nome container>
+docker logs <nome container> - monitorar container em bg
+docker logs -f <nome container> - monitorar container em tempo real
+
+docker stats - mostra as estatisticas dos containers ativos
+docker stats <nome container>  - mostra as estatisticas de 1 container 
+
+docker info - info da arquitetura docker 
+docker version - importante! (API version)
+
+docker attach <nome container> - pega o container em bg
+                                para sair digite ctrl + p + q
+
+docker exec <nome container> <o q vc deseja?>
+docker cp <nome container>:diretorio/arquivo diretorio - traz o arquivo la do container pra sua maquina
+
+docker export teste | gzip > export_container.tar.gz - exportando container
+
+zcat export_container.tar.gz | docker import - export_novo
+docker trata container importados como img
+
+tem como fazer bk de imagem
+
+docker search -h 
+docker search   --filter "is_official=true" java
+
+existe um container pra visualizar tudo sobre o docker chamado portainer.io
+
+docker stop container - running
+docker start container - run container stopped
+
+docker stop $(docker ps -q) --- para todos os containers

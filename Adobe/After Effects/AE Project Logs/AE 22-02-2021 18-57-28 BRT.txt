@@ -1,0 +1,1 @@
+  22/02/2021 18:57:28 BRT: Starting composition “estacao_saudade_release”.  Output To: /Users/nilcelia/Desktop/PedroBelloto/DigitalMarketing/Lancamento/estacao_saudade_release_1.mov    22/02/2021 19:04:02 BRT: Finished composition “estacao_saudade_release”.  Total Time Elapsed: 6 Min, 18 SecLog closed on 22/02/2021 at 19:04:07 BRT

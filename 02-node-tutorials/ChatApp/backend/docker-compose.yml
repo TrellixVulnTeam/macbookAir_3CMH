@@ -1,0 +1,40 @@
+version: '3.6'
+
+networks:
+  chatapp-network:
+    driver: bridge
+
+services:
+  chatapp-api:
+    build: .
+    volumes:
+      - .:/home/node/api
+    environment:
+      - MONGO_URL=chatapp-mongo
+    depends_on:
+      - chatapp-mongo
+    networks:
+      - chatapp-network
+    links:
+      - chatapp-mongo
+    container_name: chatapp-api
+    command: yarn dev
+    ports:
+      - 3333:3333
+  chatapp-mongo:
+    image: bitnami/mongodb:latest
+    container_name: chatapp-mongo
+    restart: always
+    environment:
+      - ALLOW_EMPTY_PASSWORD=no
+      - MONGODB_USERNAME=${MONGO_USER}
+      - MONGODB_PASSWORD=${MONGO_PASS}
+      - MONGODB_DATABASE=${MONGO_DB}
+    ports:
+      - "27017:27017"
+    volumes:
+      - /tmp/mongo:/bitnami
+    networks:
+      - chatapp-network
+
+ 

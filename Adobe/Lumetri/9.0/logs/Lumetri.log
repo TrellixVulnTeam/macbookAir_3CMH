@@ -1,0 +1,18 @@
+Machine:   MacBook-Air-de-nilcelia.local in domain 
+User:      nilcelia
+Mode:      64-Bit
+Display:   Display not detectable
+Driver:    Driver not detectable
+CPU:       Name: Intel(R) Core(TM) i5-5250U CPU @ 1.60GHz
+           Model: 61, Family: 6, Stepping: 4 
+           Total Threads: 4
+           Features: MMX SSE SSE2 SSE3 SSSE3 SSE4.1 SSE4.2 AVX F16C FMA AVX2 RDTSCP CLMUL AES RDRAND RDSEED POPCNT ABM BMI BMI2 ADX MOVBE
+Base path: /Applications/Adobe After Effects 2020/Adobe After Effects 2020.app/Contents/MacOS/
+Arguments: 
+
+21:50:43 [IrLog]           LogFile initialized
+21:50:43 [GlobalSettings]  Loading user settings from /Users/nilcelia/Documents/Adobe/Lumetri/9.0/settings/User_Settings.xml
+21:52:44 [GlobalSettings]  Last object UID: 0x00000001
+21:52:44 [IrLog]           Closing log file
+
+02/18/21

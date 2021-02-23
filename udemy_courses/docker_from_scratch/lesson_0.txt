@@ -1,0 +1,25 @@
+arquitetura docker
+	- docker engine
+	- docker client
+	- docker objects
+	- docker registry
+
+
+1. Docker Engine
+	docker deamon > rest api > client ( docker CLI ) > image, container, data volumes, network
+	
+2. Docker client
+	docker build, pull etc... Envia esses comandos para o docker engine execute.
+
+3. Docker Objects
+	images - templates, usados pra criar containers - mantido pela comunidade ( PRODUCAO )
+	containers - execução da imagem, tem inicio e fim ( CONSUMO ) - efêmeros
+	networking - capacidade de containers se comunicarem-se entre si - abstracao da complexidade de rede 
+			através  de plugins drivers.
+			User-defined networks: bridge, overlay, e macvlan;
+	storage - persistênia de dados(container elemento volátil)
+		  storage drivers: docker volume, bind mount e tempfs mounts (Linux)
+
+4. Docker Registry
+	serviço que gerencia armazenamento de IMAGES;
+	publico e privado
